@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import React from 'react';
+import data from './data';
 import './App.css';
 
 function App() {
@@ -45,126 +46,21 @@ function App() {
     <main className="main">
       <div className="content">
         <ul className="products">
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
+          {
+            data.products.map(product => 
+              <li>
+              <div className="product">
+                <img className="product-image" src={product.image} alt={product.name}></img>
+                <div className="product-name">
+                  <a href="product.html">{product.name}</a>
+                </div>
+                <div className="product-desc-short">{product.desc}</div>
+                <div className="product-price">{product.price}</div>
+                <div className="product-seller">{product.seller}</div>
+                <div className="product-seller-rating">{product.rating} Stars ({product.numReviews} reviews)</div>
               </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
-              </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
-              </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
-              </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
-              </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
-              </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
-              </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
-              </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
-              </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/canon_printer.png" alt="Canon printer"></img>
-              <div className="product-name">
-                <a href="product.html">Canon Printer</a>
-              </div>
-              <div className="product-desc-short">A great printer</div>
-              <div className="product-price">$100</div>
-              <div className="product-seller">Seller Account</div>
-              <div className="product-seller-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
+            </li>)
+          }
         </ul>
       </div>
     </main>
