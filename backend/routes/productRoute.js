@@ -41,9 +41,9 @@ router.put('/:id', isAuth, isAdmin, async (req, res) => {
     product.name = req.body.name;
     product.price = req.body.price;
     product.image = req.body.image;
-    product.brand = req.body.brand;
+    product.seller = req.body.seller;
     product.category = req.body.category;
-    product.countInStock = req.body.countInStock;
+//    product.countInStock = req.body.countInStock;
     product.description = req.body.description;
     const updatedProduct = await product.save();
     if (updatedProduct) {
@@ -70,12 +70,12 @@ router.post('/', isAuth, isAdmin, async (req, res) => {
     name: req.body.name,
     price: req.body.price,
     image: req.body.image,
-    brand: req.body.brand,
+    seller: req.body.seller,
     category: req.body.category,
-    countInStock: req.body.countInStock,
-    description: req.body.description,
-    rating: req.body.rating,
-    numReviews: req.body.numReviews,
+//    countInStock: req.body.countInStock,
+    shortDesc: req.body.shortDesc,
+//    rating: req.body.rating,
+//    numReviews: req.body.numReviews,
   });
   const newProduct = await product.save();
   if (newProduct) {

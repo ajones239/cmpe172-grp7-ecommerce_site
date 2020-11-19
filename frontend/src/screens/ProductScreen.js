@@ -40,15 +40,12 @@ function ProductScreen (props) {
                   Seller: {product.seller}
                 </li>
                 <li>
-                  Seller rating: {product.rating} starts ({product.numReviews} reviews)
-                </li>
-                <li>
                   Price: <b>${product.price}</b>
                 </li>
                 <li>
                   Description:
                   <div>
-                    {product.longDesc}
+                    {product.shortDesc}
                   </div>
                 </li>
               </ul>

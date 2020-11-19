@@ -31,12 +31,12 @@ function HomeScreen (props)
             <Link to={'/product/' + product._id}>{product.name}</Link>
           </div>
           <div className="product-desc-short">{product.shortDesc}</div>
-          <div className="product-price">{product.price}</div>
+          <div className="product-price">${product.price}</div>
           <div className="product-seller">{product.seller}</div>
-          <div className="product-seller-rating">{product.rating} Stars ({product.numReviews} reviews)</div>
         </div>
       </li>)
     }</ul>
 }
 
+//<div className="product-seller-rating">{product.rating} Stars ({product.numReviews} reviews)</div> 
 export default HomeScreen;

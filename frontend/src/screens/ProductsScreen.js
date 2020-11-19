@@ -13,10 +13,10 @@ function ProductsScreen(props) {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState('');
-  const [brand, setBrand] = useState('');
+  const [seller, setSeller] = useState('');
   const [category, setCategory] = useState('');
-  const [countInStock, setCountInStock] = useState('');
-  const [description, setDescription] = useState('');
+//  const [countInStock, setCountInStock] = useState('');
+  const [shortDesc, setDescription] = useState('');
   const productList = useSelector((state) => state.productList);
   const { loading, products, error } = productList;
 
@@ -50,11 +50,11 @@ function ProductsScreen(props) {
     setId(product._id);
     setName(product.name);
     setPrice(product.price);
-    setDescription(product.description);
+    setDescription(product.shortDesc);
     setImage(product.image);
-    setBrand(product.brand);
+    setSeller(product.seller);
     setCategory(product.category);
-    setCountInStock(product.countInStock);
+//    setCountInStock(product.countInStock);
   };
   const submitHandler = (e) => {
     e.preventDefault();
@@ -64,10 +64,10 @@ function ProductsScreen(props) {
         name,
         price,
         image,
-        brand,
+        seller,
         category,
-        countInStock,
-        description,
+//        countInStock,
+        shortDesc,
       })
     );
   };
@@ -125,23 +125,13 @@ function ProductsScreen(props) {
                 ></input>
               </li>
               <li>
-                <label htmlFor="brand">Brand</label>
+                <label htmlFor="seller">Seller Account</label>
                 <input
                   type="text"
-                  name="brand"
-                  value={brand}
-                  id="brand"
-                  onChange={(e) => setBrand(e.target.value)}
-                ></input>
-              </li>
-              <li>
-                <label htmlFor="countInStock">CountInStock</label>
-                <input
-                  type="text"
-                  name="countInStock"
-                  value={countInStock}
-                  id="countInStock"
-                  onChange={(e) => setCountInStock(e.target.value)}
+                  name="seller"
+                  value={seller}
+                  id="seller"
+                  onChange={(e) => setSeller(e.target.value)}
                 ></input>
               </li>
               <li>
@@ -155,11 +145,11 @@ function ProductsScreen(props) {
                 ></input>
               </li>
               <li>
-                <label htmlFor="description">Description</label>
+                <label htmlFor="shortDesc">Description</label>
                 <textarea
-                  name="description"
-                  value={description}
-                  id="description"
+                  name="shortDesc"
+                  value={shortDesc}
+                  id="shortDesc"
                   onChange={(e) => setDescription(e.target.value)}
                 ></textarea>
               </li>
@@ -190,7 +180,7 @@ function ProductsScreen(props) {
               <th>Name</th>
               <th>Price</th>
               <th>Category</th>
-              <th>Brand</th>
+              <th>Seller</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -201,7 +191,7 @@ function ProductsScreen(props) {
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.category}</td>
-                <td>{product.brand}</td>
+                <td>{product.seller}</td>
                 <td>
                   <button className="button" onClick={() => openModal(product)}>
                     Edit
