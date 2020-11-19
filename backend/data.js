@@ -19,7 +19,7 @@ export default {
             image: '/images/iphone13.jpg',
             price: 30,
             shortDesc: "It's like the iPhone 11 but 3 better!",
-            longDesc: 'It is a melancholy object to those, who walk through this great town, or travel in the country, when they see the streets, the roads and cabbin-doors crowded with beggars of the female sex, followed by three, four, or six children, all in rags, and importuning every passenger for an alms. These mothers instead of being able to work for their honest livelihood, are forced to employ all their time in stroling to beg sustenance for their helpless infants who, as they grow up, either turn thieves for want of work, or leave their dear native country, to fight for the Pretender in Spain, or sell themselves to the Barbadoes.',
+            longDesc: 'The most incredible, impossibly fastest iPhone yet... until next month.',
 
             seller: 'Appel',
             rating: 0.5,
@@ -27,7 +27,7 @@ export default {
         },
         {
             _id: '3',
-            name: 'xbox 360',
+            name: 'Xbox 360',
             category: 'electronics',
             image: '/images/xbox.jpg',
             price: 150,
