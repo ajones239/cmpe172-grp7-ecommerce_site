@@ -17,7 +17,7 @@
 ### 1. Clone repo
 
 ```
-$ git clone git@github.com:basir/node-react-ecommerce.git
+$ Clone repo https://github.com/ajones239/cmpe172-grp7-ecommerce_site.git
 $ cd node-react-ecommerce
 ```
 
@@ -43,15 +43,14 @@ $ npm start
 
 ### 5. Create Admin User
 
-- Run this on chrome: http://localhost:5000/api/users/createadmin
-- It returns admin email and password
+- Run this to create admin: http://localhost:5000/api/users/createadmin
+- It creates an admin account with username and password
 
-### 6. Login
+### 6. Login As Admin
 
 - Run http://localhost:3000/signin
-- Enter admin email and password and click signin
+- Enter admin email and password and sign in
 
 ### 7. Create Products
 
 - Run http://localhost:3000/products
-- Click create product and enter product info
