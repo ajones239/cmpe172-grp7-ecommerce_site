@@ -12,6 +12,10 @@
 ## Create/Edit Product Page
 ![Imgur Image](https://imgur.com/XySC1jJ.jpg)
 
+## Database
+![Imgur Image](https://imgur.com/Da4Doty.jpg)
+
+![Imgur Image](https://imgur.com/wi0kleK.jpg)
 ## Run Locally
 
 ### 1. Clone repo
