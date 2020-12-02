@@ -5,7 +5,7 @@ import {
   saveProduct,
   listProducts,
   deleteProdcut,
-} from '../actions/productActions';
+} from '../actions/productActions.js';
 
 function ProductsScreen(props) {
   const [modalVisible, setModalVisible] = useState(false);

@@ -1,6 +1,7 @@
 {
   "name": "cmpe172-grp7-ecommerce_site",
   "version": "1.0.0",
+  "type": "module",
   "description": "A simple ecommerce site using the MERN stack",
   "main": "index.js",
   "scripts": {

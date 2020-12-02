@@ -1,13 +1,13 @@
 import React from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import './App.css';
-import HomeScreen from './screens/HomeScreen';
-import ProductScreen from './screens/ProductScreen';
-import CartScreen from './screens/CartScreen';
-import SigninScreen from './screens/SigninScreen';
-import RegisterScreen from './screens/RegisterScreen';
+import HomeScreen from './screens/HomeScreen.js';
+import ProductScreen from './screens/ProductScreen.js';
+import CartScreen from './screens/CartScreen.js';
+import SigninScreen from './screens/SigninScreen.js';
+import RegisterScreen from './screens/RegisterScreen.js';
 import { useSelector } from 'react-redux';
-import ProductsScreen from './screens/ProductsScreen';
+import ProductsScreen from './screens/ProductsScreen.js';
 
 function App() 
 {
@@ -24,7 +24,7 @@ function App()
     }
  
   return (
-    <BrowserRouter>
+  <BrowserRouter>
       <div className="grid-container">
 
         <header className="header">

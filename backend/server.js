@@ -1,11 +1,11 @@
 import express from 'express';
-import data from './data';
+import data from './data.js';
 import dotenv from 'dotenv';
-import config from './config';
+import config from './config.js';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import userRoute from './routes/userRoute';
-import productRoute from './routes/productRoute';
+import userRoute from './routes/userRoute.js';
+import productRoute from './routes/productRoute.js';
 
 dotenv.config();
 
