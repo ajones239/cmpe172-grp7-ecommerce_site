@@ -1,6 +1,6 @@
 # cmpe172-grp7-ecommerce_site
 ## Check it out at:
-ec2-52-12-26-193.us-west-2.compute.amazonaws.com:3000
+http://ec2-52-12-26-193.us-west-2.compute.amazonaws.com:3000
 
 ## Home Page
 ![Imgur Image](https://imgur.com/AKJlckU.jpg)
