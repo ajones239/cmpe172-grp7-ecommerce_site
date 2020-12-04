@@ -1,5 +1,7 @@
 FROM node:latest
 
+ENV DANGEROUSLY_DISABLE_HOST_CHECK=true
+
 # Create app directory
 
 WORKDIR /usr/app
